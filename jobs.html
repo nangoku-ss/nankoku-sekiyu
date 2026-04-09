@@ -15,29 +15,33 @@
     nav a:hover { background: rgba(255,255,255,0.2); }
     .page-title { background: #e63946; color: white; text-align: center; padding: 30px 20px; }
     .page-title h2 { font-size: 1.6em; letter-spacing: 3px; }
-    .page-title p { margin-top: 10px; font-size: 1em; opacity: 0.9; }
     .container { max-width: 750px; margin: 40px auto; padding: 0 20px; }
-    .catch { background: #1a1a2e; color: white; border-radius: 12px; padding: 25px 30px; text-align: center; margin-bottom: 25px; }
-    .catch p { font-size: 1.1em; line-height: 1.8; }
-    .catch .highlight { color: #e63946; font-weight: bold; font-size: 1.2em; }
-    .section { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); padding: 25px 30px; margin-bottom: 20px; }
-    .section h3 { font-size: 1em; color: #1a1a2e; border-left: 4px solid #e63946; padding-left: 12px; margin-bottom: 18px; letter-spacing: 1px; }
-    .section table { width: 100%; border-collapse: collapse; }
-    .section table tr { border-bottom: 1px solid #f0f0f0; }
-    .section table tr:last-child { border-bottom: none; }
-    .section table th { width: 160px; padding: 12px 10px; background: #f8f8f8; color: #555; font-size: 0.88em; text-align: left; vertical-align: top; font-weight: bold; }
-    .section table td { padding: 12px 10px; font-size: 0.9em; line-height: 1.8; color: #444; }
-    .badge { display: inline-block; background: #e63946; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; margin-right: 5px; margin-bottom: 4px; }
-    .badge-blue { background: #1a1a2e; }
-    .benefit-list { list-style: none; }
-    .benefit-list li { padding: 6px 0; font-size: 0.9em; color: #444; border-bottom: 1px solid #f5f5f5; }
-    .benefit-list li:last-child { border-bottom: none; }
-    .benefit-list li::before { content: "✅ "; }
-    .contact-card { background: #1a1a2e; color: white; border-radius: 12px; padding: 30px; text-align: center; margin-top: 10px; }
-    .contact-card h3 { font-size: 1.1em; margin-bottom: 20px; letter-spacing: 2px; }
-    .contact-item { margin-bottom: 12px; font-size: 0.95em; }
-    .contact-item a { color: #e63946; text-decoration: none; font-weight: bold; font-size: 1.05em; }
-    .contact-item span { opacity: 0.7; font-size: 0.85em; margin-right: 8px; }
+    .section-label {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 16px; margin-top: 36px;
+    }
+    .section-label:first-child { margin-top: 0; }
+    .section-label h3 {
+      font-size: 1.15em; color: #1a1a2e;
+      letter-spacing: 2px; font-weight: bold;
+    }
+    .section-label .badge {
+      background: #1a1a2e; color: white;
+      font-size: 0.78em; padding: 4px 12px;
+      border-radius: 20px; letter-spacing: 1px;
+    }
+    .badge.part { background: #e63946; }
+    .job-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 28px; margin-bottom: 25px; border-left: 5px solid #1a1a2e; }
+    .job-card.part { border-left-color: #e63946; }
+    .job-table { width: 100%; border-collapse: collapse; }
+    .job-table tr { border-bottom: 1px solid #f0f0f0; }
+    .job-table tr:last-child { border-bottom: none; }
+    .job-table th { width: 130px; padding: 11px 15px; background: #f8f8f8; color: #555; font-size: 0.87em; text-align: left; vertical-align: top; }
+    .job-table td { padding: 11px 15px; font-size: 0.9em; line-height: 1.7; color: #444; }
+    .contact-card { background: #1a1a2e; color: white; border-radius: 12px; padding: 30px; text-align: center; margin-top: 36px; }
+    .contact-card h3 { font-size: 1.1em; margin-bottom: 15px; letter-spacing: 2px; }
+    .contact-card p { opacity: 0.85; font-size: 0.9em; line-height: 1.8; }
+    .contact-card a { color: #e63946; text-decoration: none; font-weight: bold; font-size: 1.2em; }
     footer { background: #1a1a2e; color: rgba(255,255,255,0.7); text-align: center; padding: 30px 20px; font-size: 0.85em; margin-top: 40px; }
   </style>
 </head>
@@ -53,100 +57,49 @@
   </nav>
   <div class="page-title">
     <h2>💼 求人情報</h2>
-    <p>一緒に働きませんか？！(^^)</p>
   </div>
   <div class="container">
 
-    <div class="catch">
-      <p><span class="highlight">正社員・パート・アルバイト募集中！</span><br>
-      もちろん未経験者も歓迎です😊<br>
-      マニュアルが充実しているので、これまでも未経験の方が活躍しています！</p>
+    <!-- 正社員 -->
+    <div class="section-label">
+      <span class="badge">正社員</span>
+      <h3>正社員募集</h3>
     </div>
-
-    <div class="section">
-      <h3>■ 仕事内容</h3>
-      <table>
-        <tr><th>業務内容</th><td>燃料給油、洗車、清掃</td></tr>
+    <div class="job-card">
+      <table class="job-table">
+        <tr><th>仕事内容</th><td>給油サービス、洗車・コーティング業務、店内清掃、レジ業務など</td></tr>
+        <tr><th>給与</th><td>月給 170,000円〜（経験・能力考慮）</td></tr>
+        <tr><th>勤務時間</th><td>7:30〜19:00（シフト制）</td></tr>
+        <tr><th>勤務地</th><td>南国石油 各店舗</td></tr>
+        <tr><th>待遇・福利厚生</th><td>社会保険完備、交通費支給、制服貸与、昇給あり</td></tr>
+        <tr><th>応募資格</th><td>普通自動車免許（AT限定可）、未経験歓迎</td></tr>
       </table>
     </div>
 
-    <div class="section">
-      <h3>■ 勤務時間（シフト制）</h3>
-      <table>
-        <tr>
-          <th>正社員</th>
-          <td>
-            早番：8:00〜17:00<br>
-            普通番：9:00〜18:00<br>
-            遅番：10:00〜19:00
-          </td>
-        </tr>
-        <tr>
-          <th>パート・アルバイト</th>
-          <td>
-            9:00〜18:00<br>
-            希望者は 9:00〜13:00 / 14:00〜18:00 も可
-          </td>
-        </tr>
+    <!-- アルバイト・パート -->
+    <div class="section-label">
+      <span class="badge part">アルバイト・パート</span>
+      <h3>アルバイト・パート募集</h3>
+    </div>
+    <div class="job-card part">
+      <table class="job-table">
+        <tr><th>仕事内容</th><td>給油サービス、洗車補助、店内清掃、レジ業務など</td></tr>
+        <tr><th>給与</th><td>時給 900円〜（経験考慮）</td></tr>
+        <tr><th>勤務時間</th><td>週3日〜・1日3時間〜相談可（シフト制）</td></tr>
+        <tr><th>勤務地</th><td>南国石油 各店舗</td></tr>
+        <tr><th>待遇</th><td>交通費支給、制服貸与、高校生可（要相談）</td></tr>
+        <tr><th>応募資格</th><td>不問・未経験歓迎、学生・主婦（夫）歓迎</td></tr>
       </table>
     </div>
 
-    <div class="section">
-      <h3>■ 勤務日数</h3>
-      <table>
-        <tr><th>正社員</th><td>25日／月</td></tr>
-        <tr><th>パート・アルバイト</th><td>週3日〜勤務可能、午前・午後のみも可</td></tr>
-      </table>
-    </div>
-
-    <div class="section">
-      <h3>■ 給与</h3>
-      <table>
-        <tr>
-          <th>正社員</th>
-          <td>
-            月給 <strong>24万円</strong>（資格手当・家族手当含む）<br>
-            交通費別途支給<br>
-            売上に応じて歩合支給あり
-          </td>
-        </tr>
-        <tr>
-          <th>パート・アルバイト</th>
-          <td>
-            時給 <strong>1,030円〜</strong><br>
-            レベルアップで昇給あり(^^)<br>
-            <small style="color:#888">※マニュアルあり。未経験者も達成しています！</small>
-          </td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="section">
-      <h3>■ 福利厚生・支給・割引</h3>
-      <ul class="benefit-list">
-        <li>交通費支給（ガソリン支給）</li>
-        <li>洗車無料</li>
-        <li>家族割引（燃料割引）</li>
-        <li>店内商品スタッフ割引</li>
-        <li>制服貸与</li>
-        <li>社会保険あり（週30時間以上勤務の場合）</li>
-        <li>昇給あり（入門マニュアル達成で時給アップ）</li>
-        <li>売上に応じてプラス報酬あり</li>
-      </ul>
-    </div>
-
+    <!-- お問い合わせ -->
     <div class="contact-card">
-      <h3>📩 応募・お問い合わせ</h3>
-      <p style="opacity:0.8; font-size:0.9em; margin-bottom:20px;">お気軽にLINE・メール・TELください♪</p>
-      <div class="contact-item">
-        <span>LINE</span><a href="https://line.me/ti/p/@416kxury">@416kxury</a>
-      </div>
-      <div class="contact-item">
-        <span>メール</span><a href="mailto:nangoku.ss@gmail.com">nangoku.ss@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <span>TEL</span><a href="tel:0997-93-2059">0997-93-2059</a>
-      </div>
+      <h3>📞 応募・お問い合わせ</h3>
+      <p>お電話またはご来店にてお気軽にお問い合わせください。</p>
+      <br>
+      <p><a href="tel:0997-93-2059">0997-93-2059</a></p>
+      <br>
+      <p style="font-size:0.82em; opacity:0.7;">受付時間：月〜土 7:30〜19:00</p>
     </div>
 
   </div>
