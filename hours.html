@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>営業時間 | 南国石油</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 20px; text-align: center; }
+    header h1 { font-size: 2em; letter-spacing: 4px; margin-bottom: 5px; }
+    header p { font-size: 0.9em; opacity: 0.8; letter-spacing: 2px; }
+    nav { background: #e63946; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; padding: 14px 28px; font-weight: bold; letter-spacing: 1px; transition: background 0.2s; }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+    .page-title { background: #e63946; color: white; text-align: center; padding: 30px 20px; }
+    .page-title h2 { font-size: 1.6em; letter-spacing: 3px; }
+    .container { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    .hours-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px; }
+    .hours-card table { width: 100%; border-collapse: collapse; }
+    .hours-card th { background: #1a1a2e; color: white; padding: 15px 20px; text-align: left; font-size: 1em; letter-spacing: 2px; }
+    .hours-card td { padding: 14px 20px; border-bottom: 1px solid #f0f0f0; font-size: 0.95em; }
+    .hours-card tr:last-child td { border-bottom: none; }
+    .hours-card tr:nth-child(even) td { background: #fafafa; }
+    .day { font-weight: bold; color: #1a1a2e; width: 120px; }
+    .time { color: #333; }
+    .closed { color: #e63946; font-weight: bold; }
+    .note { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px 30px; }
+    .note h3 { color: #1a1a2e; margin-bottom: 12px; font-size: 1em; letter-spacing: 1px; }
+    .note p { color: #666; font-size: 0.9em; line-height: 1.8; }
+    footer { background: #1a1a2e; color: rgba(255,255,255,0.7); text-align: center; padding: 30px 20px; font-size: 0.85em; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>南国石油</h1>
+    <p>NANKOKU SEKIYU</p>
+  </header>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="hours.html">営業時間</a>
+    <a href="jobs.html">求人情報</a>
+  </nav>
+  <div class="page-title">
+    <h2>🕐 営業時間</h2>
+  </div>
+  <div class="container">
+    <div class="hours-card">
+      <table>
+        <tr><th colspan="2">営業時間</th></tr>
+        <tr><td class="day">月曜日</td><td class="time">8:00 〜 19:00</td></tr>
+        <tr><td class="day">火曜日</td><td class="time">8:00 〜 19:00</td></tr>
+        <tr><td class="day">水曜日</td><td class="time">8:00 〜 19:00</td></tr>
+        <tr><td class="day">木曜日</td><td class="time">8:00 〜 19:00</td></tr>
+        <tr><td class="day">金曜日</td><td class="time">8:00 〜 19:00</td></tr>
+        <tr><td class="day">土曜日</td><td class="time">8:00 〜 18:00</td></tr>
+        <tr><td class="day">日曜日</td><td class="closed">定休日</td></tr>
+        <tr><td class="day">祝日</td><td class="time">8:00 〜 17:00</td></tr>
+      </table>
+    </div>
+    <div class="note">
+      <h3>📌 お知らせ</h3>
+      <p>年末年始・お盆期間中は営業時間が変更になる場合がございます。<br>詳細はお電話にてお問い合わせください。</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 南国石油 All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
