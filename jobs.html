@@ -15,6 +15,7 @@
     nav a:hover { background: rgba(255,255,255,0.2); }
     .page-title { background: #e63946; color: white; text-align: center; padding: 30px 20px; }
     .page-title h2 { font-size: 1.6em; letter-spacing: 3px; }
+    .page-title p { margin-top: 10px; font-size: 1em; opacity: 0.9; }
     .container { max-width: 750px; margin: 40px auto; padding: 0 20px; }
     .section-label { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; margin-top: 36px; }
     .section-label:first-child { margin-top: 0; }
@@ -28,14 +29,14 @@
     .job-table tr { border-bottom: 1px solid #f0f0f0; }
     .job-table tr:last-child { border-bottom: none; }
     .job-table th { width: 130px; padding: 11px 15px; background: #f8f8f8; color: #555; font-size: 0.87em; text-align: left; vertical-align: top; white-space: nowrap; }
-    .job-table td { padding: 11px 15px; font-size: 0.88em; line-height: 1.8; color: #444; }
+    .job-table td { padding: 11px 15px; font-size: 0.88em; line-height: 1.9; color: #444; }
     .map-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 16px; }
     .map-card .map-header { background: #1a1a2e; color: white; padding: 14px 20px; font-size: 0.95em; font-weight: bold; }
     .map-card .map-address { padding: 12px 20px; font-size: 0.9em; color: #555; background: #f8f8f8; border-bottom: 1px solid #eee; }
     .map-card iframe { width: 100%; height: 300px; border: none; display: block; }
     .contact-card { background: #1a1a2e; color: white; border-radius: 12px; padding: 30px; text-align: center; margin-top: 36px; }
     .contact-card h3 { font-size: 1.1em; margin-bottom: 18px; letter-spacing: 2px; }
-    .contact-card .contact-row { margin-bottom: 10px; font-size: 0.95em; line-height: 1.9; opacity: 0.9; }
+    .contact-card .contact-row { margin-bottom: 12px; font-size: 0.95em; line-height: 1.9; opacity: 0.9; }
     .contact-card a { color: #e8c96a; text-decoration: none; font-weight: bold; }
     footer { background: #1a1a2e; color: rgba(255,255,255,0.7); text-align: center; padding: 30px 20px; font-size: 0.85em; margin-top: 40px; }
   </style>
@@ -52,40 +53,104 @@
   </nav>
   <div class="page-title">
     <h2>💼 求人情報</h2>
+    <p>一緒に働きませんか？！😊<br>もちろん未経験者も歓迎です。</p>
   </div>
   <div class="container">
+
+    <!-- 正社員 -->
     <div class="section-label">
       <span class="badge">正社員</span>
       <h3>正社員募集</h3>
     </div>
     <div class="job-card">
       <table class="job-table">
-        <tr><th>仕事内容</th><td>給油サービス、洗車・コーティング業務、店内清掃、レジ業務など</td></tr>
-        <tr><th>給与</th><td>月給 240,000円<br>（乙４資格手当・家族手当含む）<br>別途、交通費支給（ガソリン支給）<br>売上げに応じて追加で歩合支給</td></tr>
-        <tr><th>昇給</th><td>売上に応じてプラス報酬あり</td></tr>
-        <tr><th>勤務時間</th><td>7:30〜19:00（シフト制）</td></tr>
-        <tr><th>勤務地</th><td>南国石油</td></tr>
-        <tr><th>支給・割引</th><td>交通費支給（ガソリン支給）・洗車無料<br>家族割引（燃料割引）・店内商品スタッフ割引<br>制服貸与</td></tr>
-        <tr><th>社会保険</th><td>あり（週30時間以上勤務の場合）</td></tr>
-        <tr><th>応募資格</th><td>普通自動車免許（AT限定可）、未経験歓迎</td></tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>
+            早番：8:00〜17:00<br>
+            普通番：9:00〜18:00<br>
+            遅番：10:00〜19:00
+          </td>
+        </tr>
+        <tr>
+          <th>勤務日数</th>
+          <td>月25日勤務</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            月給 240,000円<br>
+            （乙４資格手当・家族手当含む）<br>
+            別途、交通費支給<br>
+            売上げに応じて追加で給与支給
+          </td>
+        </tr>
+        <tr>
+          <th>支給・割引</th>
+          <td>
+            交通費支給（勤務地から2km以上の方）<br>
+            洗車無料<br>
+            家族割引（燃料割引）<br>
+            店内商品スタッフ割引<br>
+            制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>社会保険</th>
+          <td>あり</td>
+        </tr>
+        <tr>
+          <th>試用期間</th>
+          <td>あり</td>
+        </tr>
       </table>
     </div>
+
+    <!-- アルバイト・パート -->
     <div class="section-label">
       <span class="badge part">アルバイト・パート</span>
       <h3>アルバイト・パート募集</h3>
     </div>
     <div class="job-card part">
       <table class="job-table">
-        <tr><th>仕事内容</th><td>給油サービス、洗車補助、店内清掃、レジ業務など</td></tr>
-        <tr><th>給与</th><td>時給 1,030円〜<br>レベルアップで昇給あり 😊<br><small>※マニュアルあるので未経験者の方も達成できます！</small></td></tr>
-        <tr><th>昇給</th><td>入門マニュアル達成で時給アップ・売上に応じてプラス報酬あり</td></tr>
-        <tr><th>勤務時間</th><td>週3日〜・1日3時間〜相談可（シフト制）</td></tr>
-        <tr><th>勤務地</th><td>南国石油</td></tr>
-        <tr><th>支給・割引</th><td>交通費支給（ガソリン支給）・洗車無料<br>家族割引（燃料割引）・店内商品スタッフ割引<br>制服貸与</td></tr>
-        <tr><th>社会保険</th><td>あり（週30時間以上勤務の場合）</td></tr>
-        <tr><th>応募資格</th><td>不問・未経験歓迎、学生・主婦（夫）歓迎、高校生可（要相談）</td></tr>
+        <tr>
+          <th>勤務時間</th>
+          <td>
+            9:00〜18:00<br>
+            午前勤務（9:00〜13:00）や<br>
+            午後勤務（14:00〜18:00）も可能
+          </td>
+        </tr>
+        <tr>
+          <th>勤務日数</th>
+          <td>週3日〜勤務可能<br>午前のみ・午後のみも可能</td>
+        </tr>
+        <tr>
+          <th>給与</th>
+          <td>
+            時給 1,030円〜<br>
+            レベルアップで昇給あり 😊<br>
+            <small>※マニュアルあるので、今までも未経験者の方が達成してます。</small>
+          </td>
+        </tr>
+        <tr>
+          <th>支給・割引</th>
+          <td>
+            交通費支給（勤務地から2km以上の方）<br>
+            洗車無料<br>
+            家族割引（燃料割引）<br>
+            店内商品スタッフ割引<br>
+            制服貸与
+          </td>
+        </tr>
+        <tr>
+          <th>社会保険</th>
+          <td>あり（週労働30時間以上の方）</td>
+        </tr>
       </table>
     </div>
+
+    <!-- アクセス -->
     <div class="section-label">
       <span class="badge access">📍 アクセス</span>
       <h3>店舗所在地</h3>
@@ -95,14 +160,16 @@
       <div class="map-address">〒891-9111　鹿児島県大島郡知名町知名676-3</div>
       <iframe src="https://maps.google.com/maps?q=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E5%A4%A7%E5%B3%B6%E9%83%A1%E7%9F%A5%E5%90%8D%E7%94%BA%E7%9F%A5%E5%90%8D676-3&output=embed&z=16&hl=ja" allowfullscreen="" loading="lazy"></iframe>
     </div>
+
+    <!-- お問い合わせ -->
     <div class="contact-card">
       <h3>📞 応募・お問い合わせ</h3>
       <p style="opacity:0.85; font-size:0.9em; margin-bottom:18px;">お気軽にLINE・メール・TELください♪</p>
       <div class="contact-row">💬 LINE：<a href="https://line.me/ti/p/@416kxury" target="_blank">@416kxury</a></div>
       <div class="contact-row">✉️ メール：<a href="mailto:nangoku.ss@gmail.com">nangoku.ss@gmail.com</a></div>
       <div class="contact-row">☎️ TEL：<a href="tel:0997-93-2059">0997-93-2059</a></div>
-      <p style="font-size:0.8em; opacity:0.6; margin-top:14px;">受付時間：月〜土 7:30〜19:00</p>
     </div>
+
   </div>
   <footer>
     <p>&copy; 2025 南国石油 All Rights Reserved.</p>
