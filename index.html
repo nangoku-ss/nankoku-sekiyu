@@ -7,30 +7,52 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; color: #333; }
-    header {
-      background: linear-gradient(135deg, #1a1a2e, #16213e);
-      color: white;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
+    header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
     header h1 { font-size: 2em; letter-spacing: 4px; margin-bottom: 5px; }
     header p { font-size: 0.9em; opacity: 0.8; letter-spacing: 2px; }
-    nav {
-      background: #e63946;
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 14px 28px;
-      font-size: 0.95em;
-      font-weight: bold;
-      letter-spacing: 1px;
-      transition: background 0.2s;
-    }
+    nav { background: #e63946; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; padding: 14px 28px; font-size: 0.95em; font-weight: bold; letter-spacing: 1px; transition: background 0.2s; }
     nav a:hover { background: rgba(255,255,255,0.2); }
-    .hero {
+    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; text-align: center; padding: 60px 20px; }
+    .hero h2 { font-size: 1.8em; margin-bottom: 15px; }
+    .hero p { font-size: 1.1em; opacity: 0.85; }
+    .cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 700px; margin: 0 auto; }
+    .card { background: white; border-radius: 10px; padding: 30px 25px; width: 280px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+    .card .icon { font-size: 2.5em; margin-bottom: 15px; }
+    .card h3 { font-size: 1.1em; margin-bottom: 8px; color: #1a1a2e; }
+    .card p { font-size: 0.85em; color: #666; line-height: 1.6; }
+    footer { background: #1a1a2e; color: rgba(255,255,255,0.7); text-align: center; padding: 30px 20px; font-size: 0.85em; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>南国石油</h1>
+    <p>NANKOKU SEKIYU</p>
+  </header>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="hours.html">営業時間</a>
+    <a href="jobs.html">求人情報</a>
+  </nav>
+  <div class="hero">
+    <h2>カーケアのことなら南国石油へ</h2>
+    <p>ガソリンスタンド・洗車・ガラスコーティングなど、お車のことはお任せください。</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="hours.html">
+      <div class="icon">🕐</div>
+      <h3>営業時間</h3>
+      <p>店舗の営業時間・定休日をご確認いただけます。</p>
+    </a>
+    <a class="card" href="jobs.html">
+      <div class="icon">💼</div>
+      <h3>求人情報</h3>
+      <p>一緒に働くスタッフを募集しています。お気軽にご応募ください。</p>
+    </a>
+  </div>
+  <footer>
+    <p>&copy; 2025 南国石油 All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
