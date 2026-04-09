@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>求人情報 | 南国石油</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 20px; text-align: center; }
+    header h1 { font-size: 2em; letter-spacing: 4px; margin-bottom: 5px; }
+    header p { font-size: 0.9em; opacity: 0.8; letter-spacing: 2px; }
+    nav { background: #e63946; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; padding: 14px 28px; font-weight: bold; letter-spacing: 1px; transition: background 0.2s; }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+    .page-title { background: #e63946; color: white; text-align: center; padding: 30px 20px; }
+    .page-title h2 { font-size: 1.6em; letter-spacing: 3px; }
+    .container { max-width: 750px; margin: 40px auto; padding: 0 20px; }
+    .job-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 30px; margin-bottom: 25px; }
+    .job-card h3 { font-size: 1.2em; color: #1a1a2e; border-left: 4px solid #e63946; padding-left: 12px; margin-bottom: 20px; letter-spacing: 1px; }
+    .job-table { width: 100%; border-collapse: collapse; }
+    .job-table tr { border-bottom: 1px solid #f0f0f0; }
+    .job-table tr:last-child { border-bottom: none; }
+    .job-table th { width: 140px; padding: 12px 15px; background: #f8f8f8; color: #555; font-size: 0.88em; text-align: left; vertical-align: top; }
+    .job-table td { padding: 12px 15px; font-size: 0.9em; line-height: 1.7; color: #444; }
+    .badge { display: inline-block; background: #e63946; color: white; padding: 3px 10px; border-radius: 20px; font-size: 0.8em; margin-right: 6px; margin-bottom: 4px; }
+    .contact-card { background: #1a1a2e; color: white; border-radius: 12px; padding: 30px; text-align: center; margin-top: 30px; }
+    .contact-card h3 { font-size: 1.1em; margin-bottom: 15px; letter-spacing: 2px; }
+    .contact-card p { opacity: 0.85; font-size: 0.9em; line-height: 1.8; }
+    .contact-card a { color: #e63946; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+    footer { background: #1a1a2e; color: rgba(255,255,255,0.7); text-align: center; padding: 30px 20px; font-size: 0.85em; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>南国石油</h1>
+    <p>NANKOKU SEKIYU</p>
+  </header>
+  <nav>
+    <a href="index.html">ホーム</a>
+    <a href="hours.html">営業時間</a>
+    <a href="jobs.html">求人情報</a>
+  </nav>
+  <div class="page-title">
+    <h2>💼 求人情報</h2>
+  </div>
+  <div class="container">
+    <div class="job-card">
+      <h3>スタンドスタッフ（正社員・パート）</h3>
+      <table class="job-table">
+        <tr><th>仕事内容</th><td>給油サービス、洗車・コーティング業務、店内清掃、レジ業務など</td></tr>
+        <tr><th>雇用形態</th><td><span class="badge">正社員</span><span class="badge">パート</span><span class="badge">アルバイト</span></td></tr>
+        <tr><th>給与</th><td>正社員：月給 170,000円〜（経験・能力考慮）<br>パート：時給 900円〜</td></tr>
+        <tr><th>勤務時間</th><td>8:00〜19:00（シフト制）<br>週3日〜相談可</td></tr>
+        <tr><th>勤務地</th><td>南国石油 各店舗</td></tr>
+        <tr><th>待遇・福利厚生</th><td>社会保険完備、交通費支給、制服貸与、経験不問・未経験歓迎</td></tr>
+        <tr><th>応募資格</th><td>普通自動車免許（AT限定可）、高校生可（要相談）</td></tr>
+      </table>
+    </div>
+    <div class="contact-card">
+      <h3>📞 応募・お問い合わせ</h3>
+      <p>お電話またはご来店にてお気軽にお問い合わせください。<br>担当者が丁寧にご説明いたします。</p>
+      <br>
+      <p><a href="tel:0000-00-0000">TEL: 0000-00-0000</a></p>
+      <br>
+      <p style="font-size:0.8em; opacity:0.7;">受付時間：月〜土 8:00〜18:00</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 南国石油 All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
