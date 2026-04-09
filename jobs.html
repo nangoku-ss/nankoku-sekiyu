@@ -16,20 +16,10 @@
     .page-title { background: #e63946; color: white; text-align: center; padding: 30px 20px; }
     .page-title h2 { font-size: 1.6em; letter-spacing: 3px; }
     .container { max-width: 750px; margin: 40px auto; padding: 0 20px; }
-    .section-label {
-      display: flex; align-items: center; gap: 12px;
-      margin-bottom: 16px; margin-top: 36px;
-    }
+    .section-label { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; margin-top: 36px; }
     .section-label:first-child { margin-top: 0; }
-    .section-label h3 {
-      font-size: 1.15em; color: #1a1a2e;
-      letter-spacing: 2px; font-weight: bold;
-    }
-    .section-label .badge {
-      background: #1a1a2e; color: white;
-      font-size: 0.78em; padding: 4px 12px;
-      border-radius: 20px; letter-spacing: 1px;
-    }
+    .section-label h3 { font-size: 1.15em; color: #1a1a2e; letter-spacing: 2px; font-weight: bold; }
+    .section-label .badge { background: #1a1a2e; color: white; font-size: 0.78em; padding: 4px 12px; border-radius: 20px; letter-spacing: 1px; }
     .badge.part { background: #e63946; }
     .job-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 28px; margin-bottom: 25px; border-left: 5px solid #1a1a2e; }
     .job-card.part { border-left-color: #e63946; }
@@ -38,6 +28,10 @@
     .job-table tr:last-child { border-bottom: none; }
     .job-table th { width: 130px; padding: 11px 15px; background: #f8f8f8; color: #555; font-size: 0.87em; text-align: left; vertical-align: top; }
     .job-table td { padding: 11px 15px; font-size: 0.9em; line-height: 1.7; color: #444; }
+    .map-card { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 25px; }
+    .map-card .map-header { background: #1a1a2e; color: white; padding: 14px 20px; font-size: 0.95em; font-weight: bold; letter-spacing: 1px; }
+    .map-card .map-address { padding: 12px 20px; font-size: 0.9em; color: #555; background: #f8f8f8; border-bottom: 1px solid #eee; }
+    .map-card iframe { width: 100%; height: 300px; border: none; display: block; }
     .contact-card { background: #1a1a2e; color: white; border-radius: 12px; padding: 30px; text-align: center; margin-top: 36px; }
     .contact-card h3 { font-size: 1.1em; margin-bottom: 15px; letter-spacing: 2px; }
     .contact-card p { opacity: 0.85; font-size: 0.9em; line-height: 1.8; }
@@ -70,7 +64,7 @@
         <tr><th>仕事内容</th><td>給油サービス、洗車・コーティング業務、店内清掃、レジ業務など</td></tr>
         <tr><th>給与</th><td>月給 170,000円〜（経験・能力考慮）</td></tr>
         <tr><th>勤務時間</th><td>7:30〜19:00（シフト制）</td></tr>
-        <tr><th>勤務地</th><td>南国石油 各店舗</td></tr>
+        <tr><th>勤務地</th><td>南国石油</td></tr>
         <tr><th>待遇・福利厚生</th><td>社会保険完備、交通費支給、制服貸与、昇給あり</td></tr>
         <tr><th>応募資格</th><td>普通自動車免許（AT限定可）、未経験歓迎</td></tr>
       </table>
@@ -86,10 +80,25 @@
         <tr><th>仕事内容</th><td>給油サービス、洗車補助、店内清掃、レジ業務など</td></tr>
         <tr><th>給与</th><td>時給 900円〜（経験考慮）</td></tr>
         <tr><th>勤務時間</th><td>週3日〜・1日3時間〜相談可（シフト制）</td></tr>
-        <tr><th>勤務地</th><td>南国石油 各店舗</td></tr>
+        <tr><th>勤務地</th><td>南国石油</td></tr>
         <tr><th>待遇</th><td>交通費支給、制服貸与、高校生可（要相談）</td></tr>
         <tr><th>応募資格</th><td>不問・未経験歓迎、学生・主婦（夫）歓迎</td></tr>
       </table>
+    </div>
+
+    <!-- 地図 -->
+    <div class="section-label" style="margin-top:36px;">
+      <span class="badge" style="background:#555;">📍 アクセス</span>
+      <h3>店舗所在地</h3>
+    </div>
+    <div class="map-card">
+      <div class="map-header">📍 南国石油</div>
+      <div class="map-address">〒891-9111　鹿児島県大島郡知名町知名676-3</div>
+      <iframe
+        src="https://maps.google.com/maps?q=%E9%B9%BF%E5%85%90%E5%B3%B6%E7%9C%8C%E5%A4%A7%E5%B3%B6%E9%83%A1%E7%9F%A5%E5%90%8D%E7%94%BA%E7%9F%A5%E5%90%8D676-3&output=embed&z=16&hl=ja"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </div>
 
     <!-- お問い合わせ -->
