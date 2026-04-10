@@ -8,15 +8,51 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; color: #333; }
     header { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-    header img { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; }
+    header img.logo { width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px; }
     header h1 { font-size: 2em; letter-spacing: 4px; margin-bottom: 5px; }
     header p { font-size: 0.9em; opacity: 0.8; letter-spacing: 2px; }
     nav { background: #e63946; display: flex; justify-content: center; flex-wrap: wrap; }
     nav a { color: white; text-decoration: none; padding: 14px 28px; font-size: 0.95em; font-weight: bold; letter-spacing: 1px; transition: background 0.2s; }
     nav a:hover { background: rgba(255,255,255,0.2); }
-    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; text-align: center; padding: 60px 20px; }
-    .hero h2 { font-size: 1.8em; margin-bottom: 15px; }
-    .hero p { font-size: 1.1em; opacity: 0.85; }
+    .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; text-align: center; padding: 50px 20px 40px; }
+    .hero h2 { font-size: 1.8em; margin-bottom: 10px; }
+    .hero p { font-size: 1.05em; opacity: 0.85; margin-bottom: 36px; }
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 16px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      width: 100px;
+    }
+    .service-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .service-icon:hover { transform: scale(1.1); background: rgba(255,255,255,0.22); }
+    .service-icon.highlight {
+      background: rgba(230,57,70,0.5);
+      border-color: #e63946;
+      width: 84px;
+      height: 84px;
+      font-size: 2.2em;
+    }
+    .service-label { font-size: 0.75em; opacity: 0.9; text-align: center; line-height: 1.4; }
     .cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 700px; margin: 0 auto; }
     .card { background: white; border-radius: 10px; padding: 30px 25px; width: 280px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
     .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
@@ -28,7 +64,7 @@
 </head>
 <body>
   <header>
-    <img src="%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3__.png" alt="南国石油ロゴ">
+    <img class="logo" src="%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3__.png" alt="南国石油ロゴ">
     <h1>南国石油</h1>
     <p>NANKOKU SEKIYU</p>
   </header>
@@ -40,6 +76,36 @@
   <div class="hero">
     <h2>カーケアのことなら南国石油へ</h2>
     <p>ガソリンスタンド・洗車・ガラスコーティングなど、お車のことはお任せください。</p>
+    <div class="services">
+      <div class="service-item">
+        <div class="service-icon">⛽</div>
+        <div class="service-label">給油</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🚚</div>
+        <div class="service-label">灯油配達</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🔧</div>
+        <div class="service-label">タイヤ</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon highlight">✨</div>
+        <div class="service-label">ガラスコーティング洗車</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🛢️</div>
+        <div class="service-label">オイル交換</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">🔑</div>
+        <div class="service-label">カギ</div>
+      </div>
+      <div class="service-item">
+        <div class="service-icon">❄️</div>
+        <div class="service-label">エアコンガス</div>
+      </div>
+    </div>
   </div>
   <div class="cards">
     <a class="card" href="hours.html">
