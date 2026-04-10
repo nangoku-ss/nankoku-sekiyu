@@ -17,12 +17,18 @@
     .hero { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; text-align: center; padding: 50px 20px 40px; }
     .hero h2 { font-size: 1.8em; margin-bottom: 10px; }
     .hero p { font-size: 1.05em; opacity: 0.85; margin-bottom: 36px; }
-    .services { display: flex; justify-content: center; flex-wrap: wrap; gap: 16px; max-width: 900px; margin: 0 auto; }
-    .service-item { display: flex; flex-direction: column; align-items: center; gap: 8px; width: 100px; }
-    .service-icon { width: 72px; height: 72px; border-radius: 50%; background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.3); display: flex; align-items: center; justify-content: center; font-size: 2em; transition: transform 0.2s, background 0.2s; }
-    .service-icon:hover { transform: scale(1.1); background: rgba(255,255,255,0.22); }
-    .service-icon.highlight { background: rgba(230,57,70,0.5); border-color: #e63946; width: 84px; height: 84px; font-size: 2.2em; }
-    .service-label { font-size: 0.75em; opacity: 0.9; text-align: center; line-height: 1.4; }
+    .services { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; max-width: 900px; margin: 0 auto; }
+    .service-item { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 110px; }
+    .service-img {
+      width: 80px; height: 80px; border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,0.4);
+      background: rgba(255,255,255,0.1);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .service-img:hover { transform: scale(1.1); border-color: #e63946; }
+    .service-img.highlight { border-color: #e63946; width: 90px; height: 90px; }
+    .service-label { font-size: 0.78em; opacity: 0.95; text-align: center; line-height: 1.4; font-weight: bold; }
     .cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 700px; margin: 0 auto; }
     .card { background: white; border-radius: 10px; padding: 30px 25px; width: 280px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
     .card:hover { transform: translateY(-5px); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
@@ -48,31 +54,31 @@
     <p>ガソリンスタンド・洗車・ガラスコーティングなど、お車のことはお任せください。</p>
     <div class="services">
       <div class="service-item">
-        <div class="service-icon">⛽</div>
+        <img class="service-img" src="%E7%87%83%E6%96%99.png" alt="給油">
         <div class="service-label">給油</div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🚚</div>
+        <img class="service-img" src="Gemini_Generated_Image_by05nkby05nkby05.png" alt="灯油配達">
         <div class="service-label">灯油配達</div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🛞</div>
+        <img class="service-img" src="%E3%82%BF%E3%82%A4%E3%83%A4.png" alt="タイヤ">
         <div class="service-label">タイヤ</div>
       </div>
       <div class="service-item">
-        <div class="service-icon highlight">🚿</div>
+        <img class="service-img highlight" src="%E3%82%AC%E3%83%A9%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E6%B4%97%E8%BB%8A.png" alt="ガラスコーティング洗車">
         <div class="service-label">ガラスコーティング洗車</div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🛠️</div>
+        <img class="service-img" src="%E3%82%AA%E3%82%A4%E3%83%AB%E4%BA%A4%E6%8F%9B.jpeg" alt="オイル交換">
         <div class="service-label">オイル交換</div>
       </div>
       <div class="service-item">
-        <div class="service-icon">🔑</div>
+        <img class="service-img" src="%E5%90%88%E3%82%AB%E3%82%AE.jpg" alt="カギ">
         <div class="service-label">カギ</div>
       </div>
       <div class="service-item">
-        <div class="service-icon">💨</div>
+        <img class="service-img" src="%E3%82%A8%E3%82%A2%E3%82%B3%E3%83%B3%E3%82%AC%E3%82%B9.webp" alt="エアコンガス">
         <div class="service-label">エアコンガス</div>
       </div>
     </div>
