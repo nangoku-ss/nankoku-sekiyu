@@ -21,9 +21,10 @@
     .service-item { display: flex; flex-direction: column; align-items: center; gap: 10px; width: 110px; }
     .service-img {
       width: 80px; height: 80px; border-radius: 50%;
-      object-fit: cover;
+      object-fit: contain;
+      padding: 8px;
       border: 3px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.1);
+      background: rgba(255,255,255,0.95);
       transition: transform 0.2s, border-color 0.2s;
     }
     .service-img:hover { transform: scale(1.1); border-color: #e63946; }
