@@ -27,11 +27,8 @@
       transition: transform 0.2s, border-color 0.2s;
     }
     .service-img:hover { transform: scale(1.1); border-color: #e63946; }
-    .service-img.coating {
-      object-fit: cover;
-      background: #000;
-      border-color: #e63946;
-    }
+    .service-img.coating { background: #000; border-color: #e63946; }
+    .service-img.white-bg { background: white; object-fit: contain; padding: 8px; }
     .service-label { font-size: 0.78em; opacity: 0.95; text-align: center; line-height: 1.4; font-weight: bold; }
     .cards { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; padding: 40px 20px; max-width: 700px; margin: 0 auto; }
     .card { background: white; border-radius: 10px; padding: 30px 25px; width: 280px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
@@ -58,7 +55,7 @@
     <p>ガソリンスタンド・洗車・ガラスコーティングなど、お車のことはお任せください。</p>
     <div class="services">
       <div class="service-item">
-        <img class="service-img" src="%E7%87%83%E6%96%99.png" alt="給油">
+        <img class="service-img white-bg" src="%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3__2_.png" alt="給油">
         <div class="service-label">給油</div>
       </div>
       <div class="service-item">
@@ -78,7 +75,7 @@
         <div class="service-label">オイル交換</div>
       </div>
       <div class="service-item">
-        <img class="service-img" src="%E5%90%88%E3%82%AB%E3%82%AE.jpg" alt="カギ">
+        <img class="service-img white-bg" src="%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3__3_.png" alt="カギ">
         <div class="service-label">カギ</div>
       </div>
       <div class="service-item">
